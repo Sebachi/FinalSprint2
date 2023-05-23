@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.imageIntro{
+    width: 100%;
+    height: 450px;
+    background-image: url(/resources/image-intro-mobile.jpg);
+   
+}
+#ar1{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2640;
+    color: white;
+    position: relative;
+    gap: 20px;
+}
+
+#svg1{
+    position: absolute;
+    right: 210px;
+    bottom: 280px;
+}
+#svg2{
+    position: absolute;
+    left: 249px;
+    top: 300px;
+}
+#ar1 h3{
+    font-size: 48px;
+    text-align: center;
+}
+#ar1 span{
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+#ar1 button{
+   background-color: transparent;
+   color: white;
+   border: solid 2px white;
+   padding: 10px 20px;
+}
+  
