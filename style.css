@@ -17,7 +17,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    font-family: DM Serif Display;
 }
 .navUl{
     display: none;
@@ -70,9 +70,9 @@ body{
     flex-direction: column;
     position: absolute;
     background-color: #E5E4E2;
-    height: 100%;
+    height: auto;
     width: 300px;
-    z-index: 1;
+    z-index: 2;
     right: 0;
     top: 0;
     padding: 80px 20px;
@@ -113,7 +113,7 @@ cursor: pointer;
 }
 .hamburguesa{
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     border: 0;
@@ -144,6 +144,7 @@ cursor: pointer;
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 #svg2{
     position: absolute;
@@ -151,10 +152,37 @@ cursor: pointer;
     top: 300px;
 }
 
+#svg3{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    height: 90%;
+ 
+}
+.svg3{
+    height: 100%;
+    width: 100%;
+}
+#svg4{
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 180px;
+}
+#svg4 img{
+    width: 100%;
+    height: 100%;
+}
+.svgDesktop{
+    display: none;
+}
 #ar1 h3{
     font-size: 48px;
     text-align: center;
- 
+    z-index: 2;
 }
 #ar1 span{
     font-size: 18px;
@@ -163,14 +191,16 @@ cursor: pointer;
     padding: 0 10px ;
     margin-bottom: 15px;
     font-family: 'Open Sans';
-
+    z-index: 2;
 }
+
 button{
    background-color: transparent;
    color: white;
    border: solid 2px white;
    padding: 10px 20px;
    font-family: 'Open Sans';
+   z-index: 2;
 }
   
 /* Mid page styles */
@@ -186,7 +216,7 @@ button{
    background-color: #fff;
 }
 
-#midIndex img{
+#midIndex div img{
     height: 10vh;
 
 }
@@ -245,6 +275,11 @@ button{
     flex-direction: column;
     margin-top: 6rem;
     gap: 2rem;
+    position: relative;
+    
+}
+#ar5 h2{
+    z-index: 2;
 }
 #ar5 button{
     font-size: 11px;
@@ -272,12 +307,14 @@ footer{
     padding: 5rem 0;
     background-color: #fafafa;
     font-family: 'Open Sans';
+    position: relative;
 }
 #groupLinks{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    z-index: 2;
 }
 #socialmedia{
     border-bottom: solid 1px rgba(172, 168, 168, 0.493);
@@ -288,6 +325,7 @@ footer{
     gap: 1rem;
     padding-top: 1rem;
     flex-wrap: wrap;
+    z-index: 2;
 }
 #socialmedia h2{
     width: 100%;
@@ -465,6 +503,58 @@ header{
 .navUl button:hover{
     background-color: #000;
     color: #fff;
+}
+
+.svgMobile{
+    display: none;
+}
+.svgDesktop{
+    display: block;
+}
+#svg1-1{
+    position: absolute;
+    left: 0;
+    top: 300px;
+    z-index: 1;
+}
+#svg1-1 img{
+    width: 50%;
+}
+#svg2-1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    
+}
+#svg2-1 img{
+    width: 100%;
+    height: 100%;
+}
+#svg3-1{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    width: 45%;
+    height: 100%;
+ 
+}
+#svg3-1 img{
+    width: 100%;
+    height: 100%;
+}
+#svg4-1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+}
+#svg4-1 img{
+    width: 100%;
+    height: 100%;
 }
 
 }
