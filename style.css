@@ -181,8 +181,8 @@ cursor: pointer;
 }
 #ar1 h3{
     font-size: 48px;
-    text-align: center;
     z-index: 2;
+
 }
 #ar1 span{
     font-size: 18px;
@@ -204,6 +204,10 @@ button{
 }
   
 /* Mid page styles */
+
+.hrDesktop {
+    display: none;
+}
 
 #midIndex{
     display: flex;
@@ -556,5 +560,9 @@ header{
     width: 100%;
     height: 100%;
 }
-
+.hrDesktop {
+    display: block;
+    width: 90px;
+    border-width: 1px;
+}
 }
