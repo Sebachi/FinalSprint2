@@ -34,7 +34,6 @@ a:link {
   
   a:visited {
     color: #1c1a27;
-    background-color: transparent;
     text-decoration: none;
   }
   
@@ -42,6 +41,7 @@ a:link {
     color: #1c1a27;
     background-color: transparent;
     text-decoration: none;
+    font-weight: bold;
   }
   
   a:active {
@@ -53,6 +53,7 @@ a:link {
 .insure{
     font-family: 'KronaOne';
 }
+/* Navbar stylicing */
 header{
     width: 100%;
     height: 8vh;
@@ -60,8 +61,65 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+}
+body{
+    position: relative;
+}
+.ulMobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #E5E4E2;
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    padding: 80px 20px;
+    gap: 50px;
     
 }
+.ulMobile a{
+    border: solid 1px;
+    padding: 20px 40px;
+    text-align: center;
+    background-color: #fafafa;
+}
+.ulMobile a:hover{
+    background-color: #2c2640;
+    color: #fff;
+    border-color: aliceblue;
+}
+   
+.ulMobile button{
+    background-color: #2c2640;
+    color: #fff;
+    border-color: aliceblue;
+}
+button{
+cursor: pointer;
+}
+.ulMobile button:hover{
+    background-color: aliceblue;
+    color: #000;
+    border-color: #000;
+}
+.inactive {
+    display: none;
+  
+} 
+.navUl a:hover{
+    color: #000;
+}
+.hamburguesa{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    border: 0;
+    cursor: pointer;
+}
+
 
 .imageIntroMobile{
     width: 100%;
@@ -84,12 +142,12 @@ header{
 
 #svg1{
     position: absolute;
-    right: 210px;
-    bottom: 280px;
+    left: 0;
+    top: 0;
 }
 #svg2{
     position: absolute;
-    left: 249px;
+    right: 0;
     top: 300px;
 }
 
@@ -193,9 +251,17 @@ button{
     width: auto;
     align-self: center;
     border-color: hsl(0, 0%, 90%);
+    font-weight: bold;
 }
-
-
+#ar5 button:hover {
+    color: #000;
+    background-color: #fafafa;
+}
+#ar1 button:hover{
+    color: #000;
+    background-color: #fafafa;
+    font-weight: bold;
+}
 /* Footer */
 
 footer{
@@ -258,7 +324,7 @@ footer a{
 
 
 @media (min-width: 980px) {
- 
+    
 .imageIntroMobile{
     display: none;
 }
@@ -350,7 +416,9 @@ footer{
     flex-wrap: nowrap;
     width: 100%;
 }
-
+#socialmedia a:hover{
+    filter: brightness(0.4) ;
+}
 #groupLinks{
 
 flex-direction: row;
@@ -363,7 +431,9 @@ align-items: flex-start;
     padding-left: 0;
     width: 100%;
     }
-
+#groupLinks a:hover{
+    text-decoration: underline;
+}
 header{
     padding: 1rem 4rem;
 }
@@ -390,6 +460,10 @@ header{
    color: black;
    font-weight: bold;
    padding: 8px 30px;
+}
+.navUl button:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 }

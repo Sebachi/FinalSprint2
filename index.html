@@ -10,16 +10,25 @@
 <body>
     <header>
         <h3 class="insure">INSURE</h3>
-        <nav> <button class="hamburguesa"><img src="icon-hamburger.svg" alt="icon-hamburger"></button>
-        <ul class="navUl">
-            <a href="">HOW WE WORK</a>
-            <a href="">BLOG</a>
-            <a href="">ACCOUNT</a>
-            <button>VIEW PLANS</button>
-        </ul>
+        <nav class="navMobile"> <button class="hamburguesa"><img src="icon-hamburger.svg" alt="icon-hamburger"></button>
+        
+            <ul class="ulMobile inactive">
+                <a href="">HOW WE WORK</a>
+                <a href="">BLOG</a>
+                <a href="">ACCOUNT</a>
+                <button>VIEW PLANS</button>
+            </ul> 
+         
         
         </nav>
-
+        <nav class="navDesktop">
+            <ul class="navUl">
+                <a href="">HOW WE WORK</a>
+                <a href="">BLOG</a>
+                <a href="">ACCOUNT</a>
+                <button>VIEW PLANS</button>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -27,11 +36,11 @@
           
             <article class="article" id="ar1"> 
                 <figure class="imageIntrodesktop"><img id='family'src="./resources/image-intro-desktop.jpg" alt="Familia"></figure>
-                <!-- <figure id="svg1"><img src="/resources/bg-pattern-intro-left-mobile.svg" alt=""></figure> -->
+                <figure id="svg1"><img src="resources/bg-pattern-intro-left-mobile.svg" alt=""></figure>
                 <h3>Humanizing <br>   your insurance.</h3>
                 <span>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.</span>
                 <button>VIEW PLANS</button>
-                <!-- <figure id="svg2"><img src="/resources/bg-pattern-intro-right-mobile.svg" alt=""></figure> -->
+                <figure id="svg2"><img src="resources/bg-pattern-intro-right-mobile.svg" alt=""></figure>
             </article>
         </section>
         <section id="midIndex">
@@ -102,6 +111,6 @@
 
 
 
-
+<script src="scripts.js"></script>
 </body>
 </html>
