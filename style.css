@@ -1,11 +1,16 @@
 
 @font-face {
+    font-family: 'KronaOne';
+    src: url('resources/Font/KronaOne-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+@font-face {
     font-family: 'Open Sans';
     src: url('resources/Font/BetinaSans-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
   }
-
 
 
 *{
@@ -45,7 +50,9 @@ a:link {
     text-decoration: underline;
   }
 
-
+.insure{
+    font-family: 'KronaOne';
+}
 header{
     width: 100%;
     height: 8vh;
