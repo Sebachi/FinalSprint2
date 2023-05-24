@@ -293,6 +293,9 @@ footer{
     width: 100%;
     text-align: center;
 }
+#socialmedia a:hover{
+    filter: brightness(0.4) ;
+}
 footer h3{
     color: #a6a6a6;
     font-size: 12px;
@@ -311,7 +314,9 @@ footer h3{
    align-items: center;
    gap: 10px;
 }
-
+#groupLinks a:hover{
+    text-decoration: underline;
+}
 
 footer a{
   font-weight: bold;
@@ -416,9 +421,7 @@ footer{
     flex-wrap: nowrap;
     width: 100%;
 }
-#socialmedia a:hover{
-    filter: brightness(0.4) ;
-}
+
 #groupLinks{
 
 flex-direction: row;
@@ -431,9 +434,7 @@ align-items: flex-start;
     padding-left: 0;
     width: 100%;
     }
-#groupLinks a:hover{
-    text-decoration: underline;
-}
+
 header{
     padding: 1rem 4rem;
 }
